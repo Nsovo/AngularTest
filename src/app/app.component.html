@@ -1,15 +1,26 @@
 <ul class="button-list">
   <li>
-    <button (click)="buttonClicked()" appButton>Button with no theme</button>
-  </li>
-  <li>
-    <button (click)="buttonClicked()" appButton color="primary">
-      Button with the primary theme
+    <button id="nothemeButton" (click)="buttonClicked()"  mat-stroked-button class="no_theme"  >Button with no theme
+      <span class="glyphicon glyphicon-menu-right"></span>
     </button>
   </li>
   <li>
-    <button (click)="buttonClicked()" appButton color="accent">
+    <button class="primary_border" (click)="buttonClicked()"  type="button" mat-stroked-button  color="primary" >
+      Button with the primary theme
+      <span class="glyphicon glyphicon-menu-right"></span>
+    </button>
+  </li>
+  <li>
+    <button class="accent_border" (click)="buttonClicked()" disabled mat-stroked-button   color="accent">
       Button with accent theme
+      <span class="glyphicon glyphicon-menu-right"></span>
+    </button>
+  </li>
+
+  <li>
+    <button class="alert_border" (click)="buttonClicked()" mat-flat-button  color="warn">
+      Button with alert theme
+      <span class="glyphicon glyphicon-menu-right"></span>
     </button>
   </li>
 </ul>
